@@ -30,7 +30,7 @@ router.put('/:id', withAuth, async (req, res) => {
       return;
     }
 
-    res.status(200).json(postData)
+    res.status(200).json(newPost)
   } catch (err) {
     res.status(400).json(err);
   }
