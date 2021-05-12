@@ -28,10 +28,11 @@ app.use(session(sess));
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
+// app.engine('handlebars', hbs.engine , exphbs({extname:'handlebars', defaultLayout:'main.handlebars'}));
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
