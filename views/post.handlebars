@@ -1,17 +1,8 @@
-<div class="card">
-  <div class="card-header">
-    <h2 class="post-title">{{title}}</h2>
-    <p>Posted By: {{user.name}}
-      On: {{format_date date_created}}</p>
-  </div>
-  <div class="card-body">
-    <p class="card-text">{{contents}}</p>
-  </div>
+{{>post-details}}
 
-</div>
 <div>
-{{!-- Add a text box for comments --}}
+{{!-- Add a text box for comments in partials--}}
   <p>
-    <button class="btn btn-primary">Add a comment!</button>
+    <button class="btn btn-link">Add a comment!</button>
   </p>
 </div>
