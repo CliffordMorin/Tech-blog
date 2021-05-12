@@ -1,9 +1,13 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  {{!-- Edit post  --}}
-  
+<div class="card">
+  <div class="card-header">
+    <a href="/post/{{id}}">{{post_title}}</a>
+    <p>Posted By: {{user.name}}
+      On: {{format_date date_created}}</p>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{post_content}}</p>
+  </div>
+
 </div>
 <div>
 {{!-- Add a text box for comments --}}
