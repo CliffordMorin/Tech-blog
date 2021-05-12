@@ -5,7 +5,7 @@ const newFormHandler = async (event) => {
   const contents = document.querySelector('#post-content').value.trim();
 
   if (title && contents) {
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/post`, {
       method: 'POST',
       body: JSON.stringify({ title, contents }),
       headers: {
@@ -14,7 +14,7 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/posts');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to create new post');
     }
@@ -25,12 +25,12 @@ const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/post/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
-      document.location.replace('/posts');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to delete post');
     }
@@ -44,3 +44,4 @@ document
 document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
+

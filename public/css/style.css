@@ -1,12 +1,10 @@
-:root{
+:root {
   --dark: #004ef5;
   --light: #9ce4b9;
 }
 
 .header {
   background-color: var(--dark);
-
-  
 }
 
 body {
@@ -15,17 +13,14 @@ body {
 .nav-link {
   color: var(--light);
   padding: 2rem;
-  font-family:Verdana, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   letter-spacing: 1px;
-
- 
 }
 main {
   background-color: var(--light);
 }
 a {
   text-decoration: none;
-  
 }
 
 .tech-blog {
@@ -36,39 +31,42 @@ a {
   color: var(--dark);
   border: 2px;
   border-radius: 5px;
-  box-shadow: 5px 7px 1px #929490;
+  box-shadow: 5px 7px 1px #d9ffe7;
   text-align: center;
-  font-family:Impact, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
   font-weight: 100;
   letter-spacing: 1.5px;
   padding-top: 5px;
 }
 
 .card {
-    border: 3px solid;
+  border: 3px solid;
 }
 
 .card .card-header {
-   padding: 15px;
-   background-color: var(--dark);
-   color: var(--light);
-   display: flex;
+  padding: 15px;
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
   justify-content: space-between;
-  
 }
 .card .card-header p {
-   padding: 2px;
-   letter-spacing: 1.2px;
-  
+  padding: 2px;
+  letter-spacing: 1.2px;
 }
 .card .card-header a {
-   text-decoration: none;
-   color: var(--light);
+  text-decoration: none;
+  color: var(--light);
 }
 
+.post-title {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--light);
+}
 
 #post-title {
-   border: 2px solid lightskyblue;
+  border: 2px solid lightskyblue;
 }
 
 #post-content {
