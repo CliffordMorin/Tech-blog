@@ -38,23 +38,6 @@ const delButtonHandler = async (event) => {
   }
 };
 
-//edit post
-const editButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-edit')) {
-    const id = event.target.getAttribute('data-edit');
-
-    const response = await fetch(`/api/post/${id}`, {
-      method: 'PUT',
-    });
-
-    if (response.ok) {
-      document.location.replace('/dashboard');
-    } else {
-      alert('Failed to edit post');
-    }
-  }
-};
-
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
@@ -63,7 +46,5 @@ document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
 
-document
-  .querySelector('.post-list')
-  .addEventListener('click', editButtonHandler);
+
 

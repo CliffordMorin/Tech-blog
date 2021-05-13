@@ -1,11 +1,14 @@
 [
     {
-      "contents": "This post makes me hungry."
+      "contents": "This post makes me hungry.",
+      "post_id": 1
     },
     {
-      "contents": "Go outside."
+      "contents": "Go outside.",
+      "post_id": 1
     },
     {
-      "contents": "I watched every videos and I still suck at coding."
+      "contents": "I watched every videos and I still suck at coding.",
+      "post_id": 1
     }
   ]

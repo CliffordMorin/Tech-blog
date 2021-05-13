@@ -1,0 +1,20 @@
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Edit post:</h3>
+
+    <form class="form new-post-form edit-post">
+      <div class="form-group">
+        <label for="post-title">title:</label>
+        <input class="form-input" type="text" id="post-title" name="post-title" value="{{title}}"/> 
+      </div>
+      <div class="form-group">
+        <label for="post-content">content:</label>
+        <textarea class="form-input" id="post-content" name="post-content">{{contents}}</textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="id" data-id="{{id}}">Edit Post</button>
+      </div>
+    </form>
+  </div>
+</div> 
