@@ -34,7 +34,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Links
  
-  * Heroku Deployed demo link: ()
+  * Heroku Deployed demo link: (https://powerful-waters-18234.herokuapp.com/)
   * Github Repository URL: (https://github.com/CliffordMorin/Tech-blog)
 
 ## License
